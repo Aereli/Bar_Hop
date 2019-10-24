@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/0b06feec75.js" crossorigin="anonymous"></script> 
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:300&display=swap" rel="stylesheet">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <title>Bar Hop</title>
   </head>
@@ -17,10 +20,8 @@
     </header>
 
     <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
+      
       class SearchBar extends React.Component {
         state = { value: '' };
 
@@ -28,16 +29,17 @@
           return (
             <React.Fragment>
                 <h2>Looking For A Bar?</h2>
-                <div className="search-box">
+                <form className="search-box">
                     <input className="search-text" type="text" name="" placeholder="Search For Bars" /> 
                     <a className="search-btn" href="#">
                         <i className="fal fa-beer"></i>
                     </a>
-                </div>
+                </form>
             </React.Fragment>    
           );
         }
       }
+      
       ReactDOM.render(<SearchBar />, document.querySelector('#root'));
     </script>
   </body>
