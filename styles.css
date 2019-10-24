@@ -1,0 +1,22 @@
+body{
+    background-image: url(elliott-blair-V12QmVEMXlU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+h1{
+    color: papayawhip;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+    z-index: 1;
+    text-shadow: 2px 2px rgb(177, 43, 43);
+}
+
+h2 {
+    margin-top: 340px;
+    color: papayawhip;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
